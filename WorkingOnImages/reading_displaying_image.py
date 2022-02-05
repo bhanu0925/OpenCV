@@ -1,7 +1,7 @@
 import cv2
 
 # reading the image
-image = cv2.imread(filename=r"D:\iNeuron\OpenCV_A2Z\WorkingOnImages\img\nature.jpg")
+image = cv2.imread(filename=r'.\img\nature.jpg')
 
 # displaying image
 # window name

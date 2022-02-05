@@ -3,14 +3,14 @@
 import cv2
 
 # reading the image
-image = cv2.imread(filename=r'D:\iNeuron\OpenCV_A2Z\WorkingOnImages\img\nature.jpg', flags=1)
+image = cv2.imread(filename=r'.\img\nature.jpg', flags=1)
 print("original size : ", image.shape)
 
 ## resizing will be in width and height formate, but shapre will be (height , width) format
 
 new_image = cv2.resize(image,dsize=(500,300))
 print("new image size : ", new_image.shape)
-cv2.imwrite(r'D:\iNeuron\OpenCV_A2Z\WorkingOnImages\img\Resized.jpg',new_image)
+cv2.imwrite(r'.\img\Resized.jpg',new_image)
 # displaying image
 # window name
 # image matrix - image varoable

@@ -6,7 +6,7 @@ import cv2
 # flags = -1 - colour with alpha channel or cv2.IMREAD_UNCHANGED  - (343,3656,4) shape has 4 channels, transperency channel
 
 
-image = cv2.imread(filename=r'D:\iNeuron\OpenCV_A2Z\WorkingOnImages\img\nature.jpg', flags=-1)
+image = cv2.imread(filename=r'.\img\nature.jpg', flags=-1)
 print(image.shape)  ## (2897,2241,3) , (height, width, rgb) rgb = 0-255, RGB color code chart, or bgr ,
 
 # displaying image

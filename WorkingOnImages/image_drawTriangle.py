@@ -1,7 +1,7 @@
 import cv2
 
 # reading the image
-image = cv2.imread(filename=r'D:\iNeuron\OpenCV_A2Z\WorkingOnImages\img\Resized.jpg')
+image = cv2.imread(filename=r'.\img\Resized.jpg')
 
 ## we do not have any function to draw circle
 cv2.line(image,pt1=(200,150),pt2=(160,250),color=342,thickness=3,lineType=1)
@@ -15,7 +15,7 @@ cv2.circle(image,center=(x,y),radius=15,color=(5,3,245),thickness=-1,lineType=cv
 # window name
 # image matrix - image varoable
 cv2.imshow('My pic', image)
-cv2.imwrite(r'D:\iNeuron\OpenCV_A2Z\WorkingOnImages\img\triangle.jpg',image)
+cv2.imwrite(r'.\img\triangle.jpg',image)
 
 cv2.waitKeyEx(0)
 cv2.destroyAllWindows()
