@@ -5,7 +5,7 @@ cap2 = cv2.VideoCapture(0,cv2.CAP_DSHOW)
 
 ##DIVX,XVID,MJPG,X264,WMV1,WMV2
 
-fourcc = cv2.VideoWriter_fourcc('M','J','P','G')
+fourcc = cv2.VideoWriter_fourcc(*"XVID")
 # contains 4 parameter, name, codec,fps,resolution
 output = cv2.VideoWriter(r'.\video\output.avi',fourcc,20.0,(640,480),0)
 

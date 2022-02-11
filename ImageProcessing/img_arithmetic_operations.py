@@ -9,14 +9,18 @@ image2 = cv2.imread(r'.\img\cute2.jpg')
 #image2 = cv2.imread(r'.\img\cute1.jpg')
 image2 = cv2.resize(image2,dsize=(image1.shape[1],image1.shape[0]))
 
-image_add = cv2.add(image1,image2)
+image_add = cv2.add(image1,image2)  ## adding each pizel values, summing up
+
+image_avg = image1//2 + image2//2 ### avaraging the sum to reduce the intensity of the brightness
 image_sub = cv2.subtract(image1,image2)
 image_mul = cv2.multiply(image1,image2)
 image_div = cv2.divide(image1,image2,scale=200)
 image_weighted = cv2.addWeighted(src1=image1,alpha=1,src2=image2,beta=1.0,gamma=1)
 
+print(image_avg)
+cv2.imshow("avg",image_avg)
 img = [image_add,image_sub,image_mul,image_div,image_weighted]
 for pic in img:
     cv2.imshow('My pic', pic)
-    cv2.waitKeyEx(0)
+    cv2.waitKey(0)
     cv2.destroyAllWindows()
